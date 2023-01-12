@@ -2,5 +2,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-<h1>Main Page<h1>
+<html>
+<head>
+<title>Bienvenido a words</title>
+</head>
+<body>
+<body>
+</html>
