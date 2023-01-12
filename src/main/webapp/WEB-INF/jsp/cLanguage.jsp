@@ -4,12 +4,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>Ciudades de ${country}</title>
+<title>Paises donde se habla ${language}</title>
 </head>
 <body>
-<h1>Aqui tienes las ciudades de ${country}</h1>
+<h1>Aqui tienes los paises donde se habla ${language}</h1>
 <ul>
-        <c:forEach items="${cities}" var="c">
+        <c:forEach items="${countries}" var="c">
             <p>${c.name}</p>
         </c:forEach>
 </ul>

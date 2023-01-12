@@ -35,7 +35,7 @@
                 <td><c:out value="${c.name}"/></td>
                 <td><c:out value="${c.code}"/></td>
                 <td><a href="http://localhost:8080/cities/${c.code}">Ciudades de <c:out value="${c.name}"/></a></td>
-                <td><a href="http://localhost:8080/home">Lenguajes de <c:out value="${c.name}"/></a></td>
+                <td><a href="http://localhost:8080/languages/${c.code}">Lenguajes de <c:out value="${c.name}"/></a></td>
             </tr>
         </c:forEach>
     </table>

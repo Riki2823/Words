@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import villanueva.ricardo.words.models.City;
 import villanueva.ricardo.words.models.Country;
+import villanueva.ricardo.words.models.Language;
 import villanueva.ricardo.words.services.Service;
 
 import java.util.List;
@@ -38,4 +39,20 @@ public class AppController {
         return "city";
     }
 
+    @RequestMapping("/languages/{code}")
+    public String language(@PathVariable String code, Model m){
+        List<Language> languages = service.getLanguageByCountry(code);
+        m.addAttribute("languages", languages);
+        String country = service.countryByCode(code);
+        m.addAttribute("country", country);
+        return "language";
+    }
+
+    @RequestMapping("language/{lName}")
+    public String languageCountries(@PathVariable String lName, Model m){
+        List<Country> languageCountrues = service.getCountriesByLanguage(lName);
+        m.addAttribute("countries", languageCountrues);
+        m.addAttribute("language", lName);
+        return "cLanguage";
+    }
 }

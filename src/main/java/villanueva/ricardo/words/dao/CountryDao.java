@@ -8,4 +8,6 @@ public interface CountryDao {
     List<Country> all();
 
     String byCode(String code);
+
+    List<Country> getByLanguage(String lName);
 }
