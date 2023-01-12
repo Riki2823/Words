@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa945840-6262-4ec5-a96f-298715de4222" name="Changes" comment="Vista cities by country ok">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/LanguageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/LanguageDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cLanguage.jsp" afterDir="false" />
+    <list default="true" id="fa945840-6262-4ec5-a96f-298715de4222" name="Changes" comment="Paises donde se habla un idioma listo">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/insertCity.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/controllers/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/services/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/city.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/city.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/countries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/countries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wellcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wellcome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2KBhsQEgfSDnp051sUV4IeNyCwQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -127,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673548900029</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Paises donde se habla un idioma listo">
+      <created>1673552522117</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673552522117</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +149,7 @@
     <MESSAGE value="Configuration check" />
     <MESSAGE value="Countries print ok" />
     <MESSAGE value="Vista cities by country ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vista cities by country ok" />
+    <MESSAGE value="Paises donde se habla un idioma listo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paises donde se habla un idioma listo" />
   </component>
 </project>

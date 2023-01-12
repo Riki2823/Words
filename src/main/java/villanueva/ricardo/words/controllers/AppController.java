@@ -55,4 +55,11 @@ public class AppController {
         m.addAttribute("language", lName);
         return "cLanguage";
     }
+
+    @RequestMapping("/insertCity")
+    public String insertCity(Model m){
+        List<Country> countries = service.allCountries();
+        m.addAttribute("countries", countries);
+        return "insertCity";
+    }
 }

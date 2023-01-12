@@ -11,6 +11,8 @@
     <h2>Escoje tu consulta!</h2>
     <ul>
         <a href="http://localhost:8080/countries">Lista de todos los paises</a>
+        <a href="http://localhost:8080/insertCity">Insertar una nueva ciudad</a>
+
     </ul>
 <body>
 </html>
