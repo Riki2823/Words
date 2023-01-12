@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa945840-6262-4ec5-a96f-298715de4222" name="Changes" comment="Configuration check">
-      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/controllers/AppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/models/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/models/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/services/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/city.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wellcome.jsp" afterDir="false" />
+    <list default="true" id="fa945840-6262-4ec5-a96f-298715de4222" name="Changes" comment="Countries print ok">
+      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CityDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CityDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/countries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/controllers/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/models/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/models/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/services/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/city.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/city.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Ricardo/Desktop/DAW/Clase DAW 22-23/DWES 22-23/Geom",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ricardo/Desktop/DAW/Clase DAW 22-23/DWES 22-23/Geom&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="villanueva.ricardo.words.services" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="villanueva.ricardo.words.configuration" />
     </key>
@@ -109,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673519394863</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Countries print ok">
+      <created>1673529137984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673529137984</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="Configuration check" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuration check" />
+    <MESSAGE value="Countries print ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Countries print ok" />
   </component>
 </project>

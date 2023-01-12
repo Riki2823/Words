@@ -23,4 +23,10 @@ public class CountryDaoImpl implements CountryDao{
     public List<Country> all() {
         return jdbcTemplate.query("select * from country", countryRowMapper);
     }
+
+    @Override
+    public String byCode(String code) {
+        List<Country> country = jdbcTemplate.query("select * from country where Code=\"" + code + "\"", countryRowMapper);
+        return country.get(0).getName();
+    }
 }

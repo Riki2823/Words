@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface CountryDao {
     List<Country> all();
+
+    String byCode(String code);
 }
