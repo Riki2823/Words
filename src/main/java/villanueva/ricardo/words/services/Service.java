@@ -47,4 +47,24 @@ public class Service {
     public String codeByCountry(String country) {
         return countryDao.getCodeByCountry(country);
     }
+
+    public List<Language> getAllLaguages() {
+        return languageDao.getAll();
+    }
+
+    public List<String> getLanguageCcodes(String language) {
+        return countryDao.codesByLanguage(language);
+    }
+
+    public void deleteCities(List<String> codes) {
+        cityDao.deleteCities(codes);
+    }
+
+    public void deleteLanguages(List<String> codes) {
+        languageDao.deleteLanguages(codes);
+    }
+
+    public void deleteCountries(List<String> codes) {
+        countryDao.deleteCountries(codes);
+    }
 }

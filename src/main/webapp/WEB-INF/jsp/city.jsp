@@ -13,5 +13,9 @@
             <p>${c.name}</p>
         </c:forEach>
 </ul>
+
+<br>
+<br>
+<a href="http://localhost:8080/home">Volver al inicio</a>
 <body>
 </html>

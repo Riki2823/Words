@@ -72,4 +72,21 @@ public class AppController {
         m.addAttribute("countries", countries);
         return "insertCity";
     }
+    @RequestMapping("/deleteCountysByLanguage")
+    public String deleteCountriesByLenguage(Model m){
+        List<Language> languages = service.getAllLaguages();
+        m.addAttribute("lanugages", languages);
+        return "deleteCountries";
+    }
+
+    @PostMapping("/deleteCountysByLanguage")
+    public String deleteCountries(String language, Model m){
+        List<String> codes = service.getLanguageCcodes(language);
+        service.deleteCities(codes);
+        service.deleteLanguages(codes);
+        service.deleteCountries(codes);
+        List<Language> languages = service.getAllLaguages();
+        m.addAttribute("lanugages", languages);
+        return "deleteCountries";
+    }
 }

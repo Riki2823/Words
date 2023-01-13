@@ -39,5 +39,9 @@
             </tr>
         </c:forEach>
     </table>
+
+    <br>
+    <br>
+    <a href="http://localhost:8080/home">Volver al inicio</a>
 <body>
 </html>

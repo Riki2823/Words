@@ -8,4 +8,6 @@ public interface CityDao {
     List<City> byCode(String code);
 
     void insertCity(String country, String countryCode);
+
+    void deleteCities(List<String> codes);
 }

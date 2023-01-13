@@ -12,4 +12,8 @@ public interface CountryDao {
     List<Country> getByLanguage(String lName);
 
     String getCodeByCountry(String country);
+
+    List<String> codesByLanguage(String language);
+
+    void deleteCountries(List<String> codes);
 }

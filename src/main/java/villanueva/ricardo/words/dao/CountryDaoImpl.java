@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 import villanueva.ricardo.words.models.Country;
 
+import java.util.ArrayList;
 import java.util.List;
 @Repository
 public class CountryDaoImpl implements CountryDao{
@@ -41,5 +42,21 @@ public class CountryDaoImpl implements CountryDao{
         return countries.get(0).getCode();
     }
 
+    @Override
+    public List<String> codesByLanguage(String language) {
+        List<Country> countries = jdbcTemplate.query("select * from country inner join countrylanguage on country.code=countrylanguage.countrycode where countrylanguage.language=\"" + language + "\"", countryRowMapper);
+        List<String> codes = new ArrayList<>();
+        for (Country c : countries){
+            codes.add(c.getCode());
+        }
+        return codes;
+    }
+
+    @Override
+    public void deleteCountries(List<String> codes) {
+        for (String code : codes){
+            jdbcTemplate.update("delete from country where code=\"" + codes + "\"");
+        }
+    }
 
 }

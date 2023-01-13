@@ -30,4 +30,12 @@ public class CityDaoImpl implements  CityDao{
     public void insertCity(String country, String countryCode) {
         jdbcTemplate.update("insert into city (Name, CountryCode) values (?, ?)", country, countryCode);
     }
+
+    @Override
+    public void deleteCities(List<String> codes) {
+        for (String code : codes){
+            jdbcTemplate.update("delete from city where countrycode=\"" + code + "\"");
+        }
+
+    }
 }

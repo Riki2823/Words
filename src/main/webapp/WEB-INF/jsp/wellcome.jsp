@@ -14,7 +14,9 @@
         <br>
         <br>
         <a href="http://localhost:8080/insertCity">Insertar una nueva ciudad</a>
-
+        <br>
+        <br>
+        <a href="http://localhost:8080/deleteCountysByLanguage">Eliminar paises segun su idioma</a>
     </ul>
 <body>
 </html>

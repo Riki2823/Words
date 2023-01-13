@@ -7,4 +7,8 @@ import java.util.List;
 public interface LanguageDao {
 
     List<Language> byCountry(String code);
+
+    List<Language> getAll();
+
+    void deleteLanguages(List<String> codes);
 }
