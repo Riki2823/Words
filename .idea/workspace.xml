@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa945840-6262-4ec5-a96f-298715de4222" name="Changes" comment="Paises donde se habla un idioma listo">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/insertCity.jsp" afterDir="false" />
+    <list default="true" id="fa945840-6262-4ec5-a96f-298715de4222" name="Changes" comment="Haciendo insert City">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/controllers/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CityDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CityDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CityDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/dao/CountryDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/villanueva/ricardo/words/services/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/insertCity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/insertCity.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wellcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wellcome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673552522117</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Haciendo insert City">
+      <created>1673553289933</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673553289933</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +162,7 @@
     <MESSAGE value="Countries print ok" />
     <MESSAGE value="Vista cities by country ok" />
     <MESSAGE value="Paises donde se habla un idioma listo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Paises donde se habla un idioma listo" />
+    <MESSAGE value="Haciendo insert City" />
+    <option name="LAST_COMMIT_MESSAGE" value="Haciendo insert City" />
   </component>
 </project>

@@ -10,4 +10,6 @@ public interface CountryDao {
     String byCode(String code);
 
     List<Country> getByLanguage(String lName);
+
+    String getCodeByCountry(String country);
 }

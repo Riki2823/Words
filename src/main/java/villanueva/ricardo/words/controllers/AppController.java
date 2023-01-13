@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import villanueva.ricardo.words.models.City;
 import villanueva.ricardo.words.models.Country;
@@ -58,6 +59,15 @@ public class AppController {
 
     @RequestMapping("/insertCity")
     public String insertCity(Model m){
+        List<Country> countries = service.allCountries();
+        m.addAttribute("countries", countries);
+        return "insertCity";
+    }
+
+    @PostMapping("/insertCity")
+    public String insertCity(String newCity, String country, Model m){
+        String countryCode = service.codeByCountry(country);
+        service.insertCity(newCity, countryCode);
         List<Country> countries = service.allCountries();
         m.addAttribute("countries", countries);
         return "insertCity";

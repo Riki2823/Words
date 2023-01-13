@@ -39,4 +39,12 @@ public class Service {
     public List<Country> getCountriesByLanguage(String lName) {
         return  countryDao.getByLanguage(lName);
     }
+
+    public void insertCity(String country, String countryCode) {
+        cityDao.insertCity(country, countryCode);
+    }
+
+    public String codeByCountry(String country) {
+        return countryDao.getCodeByCountry(country);
+    }
 }

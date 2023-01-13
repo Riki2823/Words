@@ -34,4 +34,12 @@ public class CountryDaoImpl implements CountryDao{
     public List<Country> getByLanguage(String lName) {
         return jdbcTemplate.query("SELECT country.Name, country.Code FROM `country` INNER JOIN countrylanguage ON country.code = countrylanguage.CountryCode WHERE countrylanguage.Language = \"" + lName + "\"", countryRowMapper);
     }
+
+    @Override
+    public String getCodeByCountry(String country) {
+        List<Country> countries = jdbcTemplate.query("select * from country where name=\"" + country  + "\"", countryRowMapper);
+        return countries.get(0).getCode();
+    }
+
+
 }

@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface CityDao {
     List<City> byCode(String code);
+
+    void insertCity(String country, String countryCode);
 }

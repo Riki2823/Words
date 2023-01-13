@@ -25,4 +25,9 @@ public class CityDaoImpl implements  CityDao{
     public List<City> byCode(String code) {
         return jdbcTemplate.query("select * from city where CountryCode = \"" + code  + "\"", cityRowMapper);
     }
+
+    @Override
+    public void insertCity(String country, String countryCode) {
+        jdbcTemplate.update("insert into city (Name, CountryCode) values (?, ?)", country, countryCode);
+    }
 }
